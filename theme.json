@@ -1,13 +1,4 @@
 {
-	"customTemplates": [
-		{
-			"name": "page-sidebar",
-			"postTypes": [
-				"page"
-			],
-			"title": "Page with Sidebar"
-		}
-	],
 	"settings": {
 		"appearanceTools": true,
 		"color": {
@@ -327,6 +318,13 @@
 		{
 			"area": "footer",
 			"name": "footer"
+		}
+	],
+	"customTemplates": [
+		{
+			"name": "page-no-sidebar-or-title",
+			"postTypes": ["page"],
+			"title": "Page No Title or Sidebar"
 		}
 	],
 	"version": 3,
