@@ -1,0 +1,18 @@
+{
+    "name": "humanmade/hm-documentation-wp-theme",
+    "description": "A WP block theme for creating documentation sites.",
+    "type": "wordpress-theme",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Human Made Limited",
+            "email": "matthew@humanmade.com"
+        },
+        {
+            "name": "Matthew Haines-Young",
+            "email": "matthew@humanmade.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
