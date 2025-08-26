@@ -29,3 +29,29 @@ pre {
 	overflow-x: auto;
 	-webkit-overflow-scrolling: touch;
 }
+
+:where(.entry-content,.hm-docs-site-layout__sidebar) :where(.wp-block-list,ul,ol) {
+	padding-inline-start: 0;
+}
+
+:where(.entry-content,.hm-docs-site-layout__sidebar) :where(.wp-block-list,ul,ol) > li + li {
+	margin-block-start: var(--wp--preset--spacing--x-small);
+}
+
+:where(.entry-content,.hm-docs-site-layout__sidebar) :where(.wp-block-list,ul,ol) :where(.wp-block-list,ul,ol) {
+	margin-block: var(--wp--preset--spacing--x-small) !important;
+	padding-inline-start: var(--wp--preset--spacing--large);
+}
+
+.hm-docs-site-layout__sidebar :where(.hm-table-of-contents > ul,.wp-block-page-list) {
+	list-style: none;
+}
+
+.hm-docs-site-layout__sidebar :where(.hm-table-of-contents,.wp-block-page-list) a:not(:hover,:focus) {
+	text-decoration: none;
+	color: inherit;
+}
+
+.hm-table-of-contents > h2 {
+	display: none;
+}
