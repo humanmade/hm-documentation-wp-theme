@@ -133,6 +133,7 @@
 		},
 		"typography": {
 			"defaultFontSizes": false,
+			"fluid": true,
 			"fontFamilies": [
 				{
 					"fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
@@ -149,37 +150,65 @@
 				{
 					"name": "Small",
 					"size": "0.875rem",
-					"slug": "small"
+					"slug": "small",
+					"fluid": {
+						"min": "0.694rem",
+						"max": "0.833rem"
+					}
 				},
 				{
 					"name": "Regular",
 					"size": "1rem",
-					"slug": "regular"
+					"slug": "regular",
+					"fluid": {
+						"min": "0.833rem",
+						"max": "1rem"
+					}
 				},
 				{
 					"name": "Medium",
 					"size": "1.44rem",
-					"slug": "medium"
+					"slug": "medium",
+					"fluid": {
+						"min": "1rem",
+						"max": "1.44rem"
+					}
 				},
 				{
 					"name": "Large",
 					"size": "1.728rem",
-					"slug": "large"
+					"slug": "large",
+					"fluid": {
+						"min": "1.44rem",
+						"max": "1.728rem"
+					}
 				},
 				{
 					"name": "Extra Large",
 					"size": "2.074rem",
-					"slug": "x-large"
+					"slug": "x-large",
+					"fluid": {
+						"min": "1.728rem",
+						"max": "2.074rem"
+					}
 				},
 				{
 					"name": "Huge",
 					"size": "2.488rem",
-					"slug": "huge"
+					"slug": "huge",
+					"fluid": {
+						"min": "2.074rem",
+						"max": "2.488rem"
+					}
 				},
 				{
 					"name": "Mega",
 					"size": "2.986rem",
-					"slug": "mega"
+					"slug": "mega",
+					"fluid": {
+						"min": "2.488rem",
+						"max": "2.986rem"
+					}
 				}
 			]
 		},
