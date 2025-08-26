@@ -1,16 +1,31 @@
 /*
 Theme Name: HM Documentation
-Theme URI: 
+Theme URI:
 Author: Human Made
-Author URI: 
+Author URI:
 Description: Document
 Requires at least: 6.8
 Tested up to: 6.8
 Requires PHP: 5.7
-Version: 
+Version:
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: hm-documentation
-Tags: 
+Tags:
 */
 
+
+/* Docs readability tweaks */
+code, kbd, samp {
+	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	font-size: 0.9375rem;
+	line-height: 1.5;
+	background: #f6f8fa;
+	padding: 0.05em 0.3em;
+	border-radius: 4px;
+}
+
+pre {
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
