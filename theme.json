@@ -1,4 +1,13 @@
 {
+	"customTemplates": [
+		{
+			"name": "page-no-sidebar-or-title",
+			"postTypes": [
+				"page"
+			],
+			"title": "Page No Title or Sidebar"
+		}
+	],
 	"settings": {
 		"appearanceTools": true,
 		"color": {
@@ -281,16 +290,16 @@
 			"link": {
 				":hover": {
 					"color": {
-						"text": "#084d99"
+						"text": "var(--wp--preset--color--blue-400)"
 					}
 				},
 				":visited": {
 					"color": {
-						"text": "#5a3696"
+						"text": "var(--wp--preset--color--navy-900)"
 					}
 				},
 				"color": {
-					"text": "#0a66c2"
+					"text": "var(--wp--preset--color--blue)"
 				},
 				"typography": {
 					"textDecoration": "underline"
@@ -313,18 +322,18 @@
 	"templateParts": [
 		{
 			"area": "header",
-			"name": "header"
+			"name": "header",
+			"title": "Header with search"
+		},
+		{
+			"area": "header",
+			"name": "header-nav",
+			"title": "Header with navigation"
 		},
 		{
 			"area": "footer",
-			"name": "footer"
-		}
-	],
-	"customTemplates": [
-		{
-			"name": "page-no-sidebar-or-title",
-			"postTypes": ["page"],
-			"title": "Page No Title or Sidebar"
+			"name": "footer",
+			"title": "Footer"
 		}
 	],
 	"version": 3,

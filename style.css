@@ -66,3 +66,90 @@ pre {
 	text-decoration: none;
 	opacity: 0.2;
 }
+
+:where(header .has-red-background-color) .wp-block-search {
+
+}
+
+:where(header .has-red-background-color) .wp-block-search__inside-wrapper {
+	border: 2px solid white;
+}
+
+:where(header .has-red-background-color) .wp-block-search__input {
+	border: none;
+	background: none;
+	color: white;
+	caret-color: white;
+	transition: box-shadow 150ms ease, border-color 150ms ease, background-color 150ms ease;
+}
+
+:where(header .has-red-background-color) .wp-block-search__input::placeholder {
+	color: white;
+	opacity: .8;
+}
+
+/* Subtle focus for keyboard users */
+:where(header .has-red-background-color) .wp-block-search__input:focus,
+:where(header .has-red-background-color) .wp-block-search__input:focus-visible {
+	outline: none;
+}
+
+/* Keep placeholder slightly clearer on focus */
+:where(header .has-red-background-color) .wp-block-search__input:focus::placeholder,
+:where(header .has-red-background-color) .wp-block-search__input:focus-visible::placeholder {
+	opacity: .9;
+}
+
+:where(header .has-red-background-color) .wp-block-search__button {
+	border: none;
+	background: none;
+	/* replace visible text with an SVG search icon (keeps text accessible to screen readers) */
+	color: transparent;
+	text-indent: -9999px;
+	overflow: hidden;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	position: relative; /* for the pseudo-element positioning */
+	margin-inline-start: 0;
+}
+
+:where(header .has-red-background-color) .wp-block-search__button::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 1.1em;
+	height: 1.1em;
+	pointer-events: none;
+
+	/* icon color — use background-color so we can change it on hover/focus */
+	background-color: white;
+	transition: background-color 150ms ease;
+
+	/* mask for modern browsers */
+	mask-image: url("data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNiAyNiI+PGRlZnM+PHN0eWxlPi5he2ZpbGw6bm9uZTtzdHJva2U6I2ZmZjtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLXdpZHRoOjNweH08L3N0eWxlPjwvZGVmcz48Y2lyY2xlIGN4PSIxMC44MTMiIGN5PSIxMC44MTIiIHI9IjkuMDYzIiBjbGFzcz0iYSIgdHJhbnNmb3JtPSJyb3RhdGUoLTIzLjAyNSA5LjgxMyA5LjgxMikiLz48cGF0aCBkPSJtMTcuMjIxIDE3LjIyIDcuMDI5IDcuMDMiIGNsYXNzPSJhIi8+PC9zdmc+");
+	mask-repeat: no-repeat;
+	mask-position: center;
+	mask-size: contain;
+
+	/* WebKit prefix for broader support (Safari) */
+	-webkit-mask-image: url("data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNiAyNiI+PGRlZnM+PHN0eWxlPi5he2ZpbGw6bm9uZTtzdHJva2U6I2ZmZjtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLXdpZHRoOjNweH08L3N0eWxlPjwvZGVmcz48Y2lyY2xlIGN4PSIxMC44MTMiIGN5PSIxMC44MTIiIHI9IjkuMDYzIiBjbGFzcz0iYSIgdHJhbnNmb3JtPSJyb3RhdGUoLTIzLjAyNSA5LjgxMyA5LjgxMikiLz48cGF0aCBkPSJtMTcuMjIxIDE3LjIyIDcuMDI5IDcuMDMiIGNsYXNzPSJhIi8+PC9zdmc+");
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: contain;
+}
+
+/* On hover/focus make the icon black */
+:where(header .has-red-background-color) .wp-block-search__button:hover::before,
+:where(header .has-red-background-color) .wp-block-search__button:focus::before,
+:where(header .has-red-background-color) .wp-block-search__button:focus-visible::before {
+	background-color: #000;
+}
+
+.wp-block-post-title a {
+	color: inherit;
+	text-decoration: none;
+}
