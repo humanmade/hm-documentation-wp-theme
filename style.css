@@ -56,6 +56,11 @@ pre {
 	display: none;
 }
 
+.hm-table-of-contents li.active {
+	list-style: disc;
+	color: var(--wp--preset--color--blue-400);
+}
+
 .toc-heading .anchor {
 	font-size: 0.5em;
 	vertical-align: super;
